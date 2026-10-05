@@ -29,7 +29,7 @@ public class GuessMyNumber {
 			in.nextLine();
 			check(guess, number, tries, in);				
 		}
-		}
+	}
 	
 	public static void main(String[] args) {	
 		Scanner in = new Scanner(System.in);
