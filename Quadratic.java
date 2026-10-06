@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-
-
 public class Quadratic {
 	public static int enterCoef(String str, Scanner in) {
 		System.out.printf("Enter coefficient %s: ", str);
