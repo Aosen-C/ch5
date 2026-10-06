@@ -15,9 +15,11 @@ public class Quadratic {
 		int b = enterCoef("b", in);
 		int c = enterCoef("c", in);
 		
-		if (Math.pow(b, 2) - 4*a*c < 0 || a == 0) {
-			System.out.println("There is no solution");
-		} else if (Math.pow(b, 2) - 4*a*c == 0){
+		if (Math.pow(b, 2) - 4*a*c < 0) {
+			System.out.println("There is no solution because the discriminant is negative");
+		} else if (a == 0) {
+			System.out.println("This is not a quadratic because a = 0");
+		} else if (Math.pow(b, 2) - 4*a*c == 0) {
 			double x = -b / (2.0 * a);
 			System.out.printf("The single solution is: %f\n", x);
 		} else {
